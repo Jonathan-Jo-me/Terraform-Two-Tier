@@ -47,7 +47,7 @@ ASG-NAME             = "Two-Tier-ASG"
 
 
 # CLOUDFRONT
-DOMAIN-NAME = "awsserver.xyz"
+DOMAIN-NAME = "jonathanjo.me"
 CDN-NAME    = "Two-Tier-CDN"
 
 # WAF
