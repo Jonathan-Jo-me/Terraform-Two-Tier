@@ -30,7 +30,7 @@ Follow these steps to deploy the Two-Tier architecture:
 1. **Clone the Repository
 
    ```bash
-   git clone https://github.com/YuksR/Terraform-2-tier.git
+   git clone https://github.com/Jonathan02JO/Terraform-Two-Tier.git
    ```
 
 2.  **Plan and Apply:**
