@@ -1,14 +1,72 @@
-![DevOps-Projects](https://imgur.com/qimdPIU.png)
+# Two-Tier AWS Infrastructure with Terraform
 
-# Real-World DevOps Projects For Learning ♐
+## Overview
 
-DevOps Real World Projects for Aspiring DevOps Engineers [Beginner to Advanced]
+Welcome to the Terraform project for deploying a Two-Tier architecture on AWS! This project adopts a modular and security-enhanced approach to create a scalable and maintainable infrastructure.
 
----
-### 𝙏𝙝𝙚 𝙧𝙚𝙥𝙤𝙨𝙞𝙩𝙤𝙧𝙮 𝙘𝙤𝙣𝙩𝙖𝙞𝙣𝙨 𝙗𝙚𝙜𝙞𝙣𝙣𝙚𝙧 𝙛𝙧𝙞𝙚𝙣𝙙𝙡𝙮 𝘿𝙚𝙫𝙊𝙥𝙨 𝙥𝙧𝙤𝙟𝙚𝙘𝙩𝙨 𝙛𝙤𝙧 𝙖𝙪𝙩𝙤𝙢𝙖𝙩𝙞𝙣𝙜 𝙨𝙩𝙪𝙛𝙛𝙨 𝙪𝙨𝙞𝙣𝙜 𝘿𝙚𝙫𝙊𝙥𝙨 𝙘𝙤𝙣𝙘𝙚𝙥𝙩𝙨.
----
-### In this repository I will upload my projects on DevOps and also Integration of DevOps technology with other technologies like Machine Learning, Git/Github, etc.
 
-----
-## Hit the Star! ⭐
-***If you are planning to use this repo for learning, please hit the star. Thanks!***
+## Pre-requisites
+Before diving into the infrastructure creation, make sure you have the following:
+
+  - An AWS Account
+
+  - Terraform installed on your local machine
+
+  - AWS Access and Secret Access keys configured
+
+  - Domain Name Configured manually and add the Name Servers to your Domain Provider
+
+## Features
+
+- **Modular Structure:** The project is organized into dedicated modules for each AWS service, promoting reusability and maintainability.
+- **Security Focus:** Utilize IAM roles and policies to ensure a secure infrastructure.
+- **Infrastructure as Code (IaC):** Deploy and manage your infrastructure using Terraform, enabling version control and reproducibility.
+- **Service-Specific Modules:** Each module corresponds to a specific AWS service, allowing for targeted management.
+
+## Getting Started
+
+Follow these steps to deploy the Two-Tier architecture:
+
+1. **Clone the Repository
+
+   ```bash
+   git clone https://github.com/YuksR/Terraform-Github-AWS.git
+   ```
+
+2.  **Plan and Apply:**
+    ```bash
+    terraform init
+    terraform plan -var-file=variables.tfvars
+    terraform apply -var-file=variables.tfvars --auto-approve
+    ```
+
+3. **Cleanup:**
+When done the exploration, run the following to destroy the infrastructure
+    ```bash
+    terraform destroy -var-file=variables.tfvars --auto-approve
+    ```
+
+## Project Highlights
+
+- **VPC: The Foundation**: Create a robust Virtual Private Cloud (VPC) to establish a secure and isolated environment for your application.
+
+- **Load Balancing Magic**: Harness the power of the Application Load Balancer (ALB) to intelligently distribute incoming traffic across multiple EC2 instances, ensuring optimal performance and high availability.
+
+- **Auto Scaling Wonders**: Leverage the Auto Scaling Group to dynamically adjust the number of EC2 instances based on demand. This ensures your application scales seamlessly, providing resilience and cost efficiency.
+
+- **Database Sorcery**: Dive into the world of managed databases with Amazon RDS. Easily deploy, scale, and manage relational databases without the operational overhead.
+
+- **DNS Mastery**: Achieve domain registration and DNS management excellence with Amazon Route 53. Seamlessly connect your applications to the internet while ensuring high availability and low-latency responses.
+
+- **Web Application Firewall (WAF) Protection**: Safeguard your applications from web exploits and ensure a secure user experience with AWS WAF, a web application firewall that helps protect your web applications from common web exploits.
+
+- **Content Delivery Network (CDN) Acceleration**: Boost the delivery of your content globally with a Content Delivery Network. Accelerate load times, enhance user experience, and reduce latency using Amazon CloudFront.
+
+- **SSL Certificate Management with ACM**: Ensure secure communication between your users and the application with Amazon Certificate Manager (ACM). Easily provision, manage, and deploy SSL/TLS certificates.
+
+- **IAM for Robust Security**: Implement robust security measures with Identity and Access Management (IAM). Define granular permissions and access controls to secure your AWS resources.
+
+- **Infrastructure as Code (IaC) Excellence**: Embrace Infrastructure as Code (IaC) with Terraform, facilitating the provisioning and management of AWS resources in a declarative and scalable manner.
+
+These project highlights showcase the comprehensive AWS services integrated into the Two-Tier architecture, providing a solid foundation for your applications with security, scalability, and performance at the forefront.
+
